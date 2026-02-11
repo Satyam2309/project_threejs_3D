@@ -448,6 +448,74 @@ input::placeholder {
   font-size: 0.91rem;
 }
 
+
+body[data-theme="light"] .hero {
+  background:
+    radial-gradient(1200px 380px at 10% -80px, #dfe5ff 0%, transparent 70%),
+    radial-gradient(860px 320px at 90% 10%, #ebdfff 0%, transparent 72%),
+    linear-gradient(180deg, var(--bg-soft), var(--bg));
+  border-bottom: 1px solid rgba(23, 29, 52, 0.08);
+}
+
+body[data-theme="light"] .eyebrow {
+  color: #5d36c8;
+}
+
+body[data-theme="light"] .hero-badges {
+  color: #3e4a73;
+}
+
+body[data-theme="light"] .hero-card,
+body[data-theme="light"] .service-card,
+body[data-theme="light"] .pricing-card,
+body[data-theme="light"] .timeline article {
+  box-shadow: 0 10px 24px rgba(29, 44, 90, 0.08);
+}
+
+body[data-theme="light"] label {
+  color: #2f3b63;
+}
+
+body[data-theme="light"] input,
+body[data-theme="light"] select {
+  background: #ffffff;
+  color: #1e2747;
+  border-color: #cfd6f6;
+}
+
+body[data-theme="light"] input::placeholder {
+  color: #7580ab;
+}
+
+body[data-theme="light"] .estimate-output {
+  color: #4d2ac7;
+}
+
+body[data-theme="light"] .muted {
+  background: linear-gradient(180deg, #f1f4ff, #edf1ff);
+  border-top: 1px solid rgba(23, 29, 52, 0.08);
+  border-bottom: 1px solid rgba(23, 29, 52, 0.08);
+}
+
+body[data-theme="light"] .featured {
+  border-color: #7c5bff;
+  box-shadow: 0 0 0 1px rgba(123, 47, 247, 0.18), 0 12px 30px rgba(47, 53, 102, 0.12);
+}
+
+body[data-theme="light"] .cta {
+  border-top: 1px solid rgba(23, 29, 52, 0.08);
+  border-bottom: 1px solid rgba(23, 29, 52, 0.08);
+  background:
+    radial-gradient(900px 300px at 0% 100%, #dce7ff 0%, transparent 70%),
+    radial-gradient(900px 320px at 100% 100%, #f2dcff 0%, transparent 70%),
+    linear-gradient(180deg, #f4f7ff, #eef2ff);
+}
+
+body[data-theme="light"] .footer {
+  border-top: 1px solid rgba(23, 29, 52, 0.1);
+  background: #f3f5ff;
+}
+
 @keyframes pulse {
   0%,
   100% {
