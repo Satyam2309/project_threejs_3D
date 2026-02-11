@@ -140,3 +140,26 @@ if (contactForm) {
     alert(`Thanks ${name}! Our wedding service team will call you shortly.`);
   });
 }
+
+
+const revealTargets = document.querySelectorAll(
+  ".hero-grid > div, .hero-card, .section h2, .section-intro, .service-card, .pricing-card, .timeline article, .cta-grid > div, .contact-form"
+);
+
+if (revealTargets.length > 0) {
+  revealTargets.forEach((element) => element.classList.add("scroll-reveal"));
+
+  const revealObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.18, rootMargin: "0px 0px -8% 0px" }
+  );
+
+  revealTargets.forEach((element) => revealObserver.observe(element));
+}

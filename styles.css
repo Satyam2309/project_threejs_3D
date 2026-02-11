@@ -48,6 +48,13 @@ html,
 body {
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+  width: 0;
+  height: 0;
 }
 
 body {
@@ -155,6 +162,19 @@ body.loading {
   color: var(--text);
   font-weight: 700;
   font-size: 1.02rem;
+}
+
+.brand-glow {
+  display: inline-block;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  background: linear-gradient(110deg, #ffffff 10%, #f1a8ff 35%, #9fe2ff 55%, #fff1ac 72%, #ffffff 95%);
+  background-size: 220% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  filter: drop-shadow(0 0 6px rgba(255, 151, 242, 0.4));
+  animation: glimmer 3s linear infinite;
 }
 
 .nav-links {
@@ -516,6 +536,24 @@ body[data-theme="light"] .footer {
   background: #f3f5ff;
 }
 
+
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(28px) scale(0.985);
+  transition: opacity 0.55s ease, transform 0.55s ease;
+}
+
+.scroll-reveal.visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+@keyframes glimmer {
+  to {
+    background-position: 220% center;
+  }
+}
+
 @keyframes pulse {
   0%,
   100% {
@@ -564,12 +602,19 @@ body[data-theme="light"] .footer {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .loader-frame {
+  .loader-frame,
+  .brand-glow {
     animation: none;
   }
 
   .site-loader,
-  .cursor-trail {
+  .cursor-trail,
+  .scroll-reveal {
     transition: none;
+  }
+
+  .scroll-reveal {
+    opacity: 1;
+    transform: none;
   }
 }
