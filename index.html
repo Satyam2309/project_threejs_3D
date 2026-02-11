@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShaadiSphere | End-to-End Wedding Services</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Great+Vibes&family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="site-loader" id="site-loader" role="status" aria-live="polite" aria-label="Loading website">
+      <div class="loader-frame" aria-hidden="true">
+        <svg class="loader-icon" viewBox="0 0 220 160" xmlns="http://www.w3.org/2000/svg">
+          <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M110 134C84 111 54 85 54 54C54 33 70 20 89 20C99 20 106 24 110 31C114 24 121 20 131 20C150 20 166 33 166 54C166 85 136 111 110 134Z" stroke-width="4"/>
+            <circle cx="99" cy="68" r="18" stroke-width="3.5"/>
+            <circle cx="121" cy="68" r="18" stroke-width="3.5"/>
+            <path d="M110 8l5 8h-10z" fill="none" stroke-width="3"/>
+            <path d="M72 42C58 30 44 28 32 36" stroke-width="3"/>
+            <path d="M148 42C162 30 176 28 188 36" stroke-width="3"/>
+            <path d="M66 79C50 72 36 73 24 84" stroke-width="3"/>
+            <path d="M154 79C170 72 184 73 196 84" stroke-width="3"/>
+          </g>
+          <g fill="#e7b8a8" opacity="0.95">
+            <circle cx="47" cy="80" r="11"/>
+            <circle cx="173" cy="80" r="11"/>
+          </g>
+        </svg>
+      </div>
+      <div class="loader-text" aria-hidden="true">
+        <p class="loader-brand">Planora</p>
+        <p class="loader-subtitle">Wedding Services Management</p>
+      </div>
+    </div>
+
+    <div class="cursor-trail" id="cursor-trail" aria-hidden="true"></div>
+    <header class="topbar">
+      <div class="container nav-wrap">
+        <a href="#" class="brand">ShaadiSphere</a>
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="#services">Services</a>
+          <a href="#packages">Packages</a>
+          <a href="#workflow">How it Works</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="nav-actions">
+          <button class="btn btn-ghost" id="theme-toggle" type="button" aria-label="Enable dark mode">
+            🌙 Dark
+          </button>
+          <button class="btn btn-ghost" type="button">Client Login</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div>
+            <p class="eyebrow">India's streamlined wedding operations platform</p>
+            <h1>Plan your wedding services in one place—fast, elegant, stress-free.</h1>
+            <p class="hero-copy">
+              Book venue, band baja, ghodi, catering, décor, photography, makeup,
+              logistics and guest services from verified professionals with transparent pricing.
+            </p>
+            <div class="hero-actions">
+              <a href="#contact" class="btn btn-primary">Get Free Consultation</a>
+              <a href="#services" class="btn btn-secondary">Explore Services</a>
+            </div>
+            <ul class="hero-badges">
+              <li>✔ 500+ verified partners</li>
+              <li>✔ 24/7 planner assistance</li>
+              <li>✔ Custom city-wise packages</li>
+            </ul>
+          </div>
+          <aside class="hero-card" aria-label="Quick estimate card">
+            <h2>Quick Wedding Estimate</h2>
+            <p>Tell us your date and city. Get a tailored service estimate in minutes.</p>
+            <form id="estimate-form" class="estimate-form">
+              <label>
+                Event City
+                <input id="city" type="text" placeholder="e.g., Jaipur" required />
+              </label>
+              <label>
+                Guest Count
+                <input id="guests" type="number" min="50" max="2000" value="300" required />
+              </label>
+              <label>
+                Events
+                <select id="events" required>
+                  <option value="2">2 Events (Basic)</option>
+                  <option value="3" selected>3 Events (Standard)</option>
+                  <option value="5">5 Events (Grand)</option>
+                </select>
+              </label>
+              <button type="submit" class="btn btn-primary btn-block">Calculate Budget Range</button>
+            </form>
+            <p class="estimate-output" id="estimate-output" aria-live="polite">
+              Enter details to view your estimated budget range.
+            </p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section" id="services">
+        <div class="container">
+          <h2>Complete Wedding Services</h2>
+          <p class="section-intro">
+            Everything needed for a successful wedding event—without vendor chaos.
+          </p>
+          <div class="card-grid">
+            <article class="service-card">
+              <h3>Venue Booking</h3>
+              <p>Banquet halls, resorts, farmhouses, destination properties with slot management.</p>
+            </article>
+            <article class="service-card">
+              <h3>Band Baja & Entry</h3>
+              <p>Premium band, dhol, DJ truck, ghodi, baggi, and groom procession experiences.</p>
+            </article>
+            <article class="service-card">
+              <h3>Catering & Hospitality</h3>
+              <p>Veg/non-veg menus, live counters, guest check-in desks and rooming support.</p>
+            </article>
+            <article class="service-card">
+              <h3>Décor & Lighting</h3>
+              <p>Theme-based mandap, floral design, stage setups and mood lighting plans.</p>
+            </article>
+            <article class="service-card">
+              <h3>Photo & Video Teams</h3>
+              <p>Candid, cinematic films, reels coverage, drone shots and same-day edits.</p>
+            </article>
+            <article class="service-card">
+              <h3>Bridal/Groom Styling</h3>
+              <p>Makeup artists, stylists, mehendi and grooming coordination for all events.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section muted" id="packages">
+        <div class="container">
+          <h2>Industry-Style Packages</h2>
+          <div class="pricing-grid">
+            <article class="pricing-card">
+              <h3>Essential</h3>
+              <p class="price">₹7.5L onwards</p>
+              <ul>
+                <li>1-day event setup</li>
+                <li>Venue + catering + décor</li>
+                <li>Basic band entry</li>
+                <li>Core planning support</li>
+              </ul>
+            </article>
+            <article class="pricing-card featured">
+              <span class="badge">Most Popular</span>
+              <h3>Signature</h3>
+              <p class="price">₹15L onwards</p>
+              <ul>
+                <li>Multi-event planning</li>
+                <li>Band baja + ghodi + logistics</li>
+                <li>Premium photography</li>
+                <li>Dedicated wedding manager</li>
+              </ul>
+            </article>
+            <article class="pricing-card">
+              <h3>Royal</h3>
+              <p class="price">₹30L onwards</p>
+              <ul>
+                <li>Destination operations</li>
+                <li>Luxury hospitality desk</li>
+                <li>Celebrity-grade entertainment</li>
+                <li>End-to-end white-glove service</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="workflow">
+        <div class="container">
+          <h2>How We Manage It</h2>
+          <div class="timeline">
+            <article>
+              <h3>1. Discovery Call</h3>
+              <p>Understand budget, family preferences, city, and event style.</p>
+            </article>
+            <article>
+              <h3>2. Vendor Lock & Blueprint</h3>
+              <p>Finalize verified vendors, create timeline, and allocate responsibilities.</p>
+            </article>
+            <article>
+              <h3>3. Execution & Monitoring</h3>
+              <p>On-ground team handles every service while you enjoy your celebration.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section cta" id="contact">
+        <div class="container cta-grid">
+          <div>
+            <h2>Ready to plan your wedding services?</h2>
+            <p>Get a custom service roadmap with transparent pricing and city-specific options.</p>
+          </div>
+          <form class="contact-form" id="contact-form">
+            <input type="text" id="name" placeholder="Your name" required />
+            <input type="tel" id="phone" placeholder="Phone number" required />
+            <input type="email" id="email" placeholder="Email" required />
+            <button class="btn btn-primary" type="submit">Request Callback</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-row">
+        <p>© 2026 ShaadiSphere. Wedding services only—no matchmaking.</p>
+        <p>Built for smooth client experience and reliable event execution.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
