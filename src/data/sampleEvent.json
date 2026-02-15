@@ -1,0 +1,635 @@
+{
+  "event": {
+    "id": 1,
+    "name": "Alex & Jamie's Wedding Weekend",
+    "date": "2027-08-21T16:00:00",
+    "venue": "Seaside Manor, Monterey, CA",
+    "description": "Join us for a sunset ceremony and joyful weekend celebration.",
+    "heroImage": "/assets/hero.svg",
+    "mapPlaceholder": "/assets/map-placeholder.svg"
+  },
+  "couple": {
+    "names": "Alex Rivera & Jamie Chen",
+    "bio": "We met over coffee and books, and we can't wait to celebrate with everyone we love.",
+    "photos": [
+      "/assets/couple-1.svg",
+      "/assets/couple-2.svg",
+      "/assets/couple-3.svg"
+    ]
+  },
+  "story": [
+    {
+      "year": "2019",
+      "title": "First Meet",
+      "description": "Met at a local bookstore poetry night.",
+      "photo": "/assets/couple-1.svg"
+    },
+    {
+      "year": "2022",
+      "title": "The Proposal",
+      "description": "A surprise proposal during a coastal hike.",
+      "photo": "/assets/couple-2.svg"
+    },
+    {
+      "year": "2027",
+      "title": "Wedding Weekend",
+      "description": "Celebrating with family and friends.",
+      "photo": "/assets/couple-3.svg"
+    }
+  ],
+  "schedule": [
+    {
+      "day": "Friday",
+      "events": [
+        {
+          "time": "18:00",
+          "name": "Welcome Dinner"
+        },
+        {
+          "time": "20:00",
+          "name": "Beach Bonfire"
+        }
+      ]
+    },
+    {
+      "day": "Saturday",
+      "events": [
+        {
+          "time": "16:00",
+          "name": "Ceremony"
+        },
+        {
+          "time": "18:00",
+          "name": "Cocktail Hour"
+        },
+        {
+          "time": "19:00",
+          "name": "Reception"
+        }
+      ]
+    },
+    {
+      "day": "Sunday",
+      "events": [
+        {
+          "time": "10:00",
+          "name": "Farewell Brunch"
+        }
+      ]
+    }
+  ],
+  "guests": [
+    {
+      "id": 1,
+      "name": "Ava Smith",
+      "email": "ava.smith@example.com",
+      "group": "Family",
+      "status": "Pending",
+      "mealChoice": "Fish",
+      "plusOne": true,
+      "seat": null,
+      "token": "RSVP-1001"
+    },
+    {
+      "id": 2,
+      "name": "Liam Johnson",
+      "email": "liam.johnson@example.com",
+      "group": "Work",
+      "status": "Attending",
+      "mealChoice": "Fish",
+      "plusOne": false,
+      "seat": null,
+      "token": "RSVP-1002"
+    },
+    {
+      "id": 3,
+      "name": "Olivia Brown",
+      "email": "olivia.brown@example.com",
+      "group": "Family",
+      "status": "Declined",
+      "mealChoice": "Fish",
+      "plusOne": false,
+      "seat": null,
+      "token": "RSVP-1003"
+    },
+    {
+      "id": 4,
+      "name": "Noah Davis",
+      "email": "noah.davis@example.com",
+      "group": "Friends",
+      "status": "Pending",
+      "mealChoice": "Vegetarian",
+      "plusOne": false,
+      "seat": null,
+      "token": "RSVP-1004"
+    },
+    {
+      "id": 5,
+      "name": "Emma Miller",
+      "email": "emma.miller@example.com",
+      "group": "Family",
+      "status": "Attending",
+      "mealChoice": "Vegetarian",
+      "plusOne": true,
+      "seat": null,
+      "token": "RSVP-1005"
+    },
+    {
+      "id": 6,
+      "name": "Elijah Wilson",
+      "email": "elijah.wilson@example.com",
+      "group": "Work",
+      "status": "Declined",
+      "mealChoice": "Fish",
+      "plusOne": false,
+      "seat": null,
+      "token": "RSVP-1006"
+    },
+    {
+      "id": 7,
+      "name": "Sophia Moore",
+      "email": "sophia.moore@example.com",
+      "group": "Work",
+      "status": "Pending",
+      "mealChoice": "Chicken",
+      "plusOne": true,
+      "seat": null,
+      "token": "RSVP-1007"
+    },
+    {
+      "id": 8,
+      "name": "Lucas Taylor",
+      "email": "lucas.taylor@example.com",
+      "group": "VIP",
+      "status": "Attending",
+      "mealChoice": "Fish",
+      "plusOne": false,
+      "seat": null,
+      "token": "RSVP-1008"
+    },
+    {
+      "id": 9,
+      "name": "Isabella Anderson",
+      "email": "isabella.anderson@example.com",
+      "group": "Friends",
+      "status": "Pending",
+      "mealChoice": "Fish",
+      "plusOne": true,
+      "seat": null,
+      "token": "RSVP-1009"
+    },
+    {
+      "id": 10,
+      "name": "Mason Thomas",
+      "email": "mason.thomas@example.com",
+      "group": "Family",
+      "status": "Pending",
+      "mealChoice": "Fish",
+      "plusOne": true,
+      "seat": null,
+      "token": "RSVP-1010"
+    },
+    {
+      "id": 11,
+      "name": "Mia Jackson",
+      "email": "mia.jackson@example.com",
+      "group": "Friends",
+      "status": "Attending",
+      "mealChoice": "Vegetarian",
+      "plusOne": false,
+      "seat": null,
+      "token": "RSVP-1011"
+    },
+    {
+      "id": 12,
+      "name": "Logan White",
+      "email": "logan.white@example.com",
+      "group": "Work",
+      "status": "Declined",
+      "mealChoice": "Chicken",
+      "plusOne": false,
+      "seat": null,
+      "token": "RSVP-1012"
+    },
+    {
+      "id": 13,
+      "name": "Amelia Harris",
+      "email": "amelia.harris@example.com",
+      "group": "Family",
+      "status": "Pending",
+      "mealChoice": "Vegetarian",
+      "plusOne": true,
+      "seat": null,
+      "token": "RSVP-1013"
+    },
+    {
+      "id": 14,
+      "name": "James Martin",
+      "email": "james.martin@example.com",
+      "group": "Work",
+      "status": "Declined",
+      "mealChoice": "Fish",
+      "plusOne": false,
+      "seat": null,
+      "token": "RSVP-1014"
+    },
+    {
+      "id": 15,
+      "name": "Harper Thompson",
+      "email": "harper.thompson@example.com",
+      "group": "Work",
+      "status": "Pending",
+      "mealChoice": "Fish",
+      "plusOne": true,
+      "seat": null,
+      "token": "RSVP-1015"
+    },
+    {
+      "id": 16,
+      "name": "Benjamin Garcia",
+      "email": "benjamin.garcia@example.com",
+      "group": "Friends",
+      "status": "Attending",
+      "mealChoice": "Fish",
+      "plusOne": false,
+      "seat": null,
+      "token": "RSVP-1016"
+    },
+    {
+      "id": 17,
+      "name": "Evelyn Martinez",
+      "email": "evelyn.martinez@example.com",
+      "group": "Family",
+      "status": "Declined",
+      "mealChoice": "Chicken",
+      "plusOne": false,
+      "seat": null,
+      "token": "RSVP-1017"
+    },
+    {
+      "id": 18,
+      "name": "Jacob Robinson",
+      "email": "jacob.robinson@example.com",
+      "group": "Family",
+      "status": "Attending",
+      "mealChoice": "Vegetarian",
+      "plusOne": true,
+      "seat": null,
+      "token": "RSVP-1018"
+    },
+    {
+      "id": 19,
+      "name": "Abigail Clark",
+      "email": "abigail.clark@example.com",
+      "group": "VIP",
+      "status": "Declined",
+      "mealChoice": "Chicken",
+      "plusOne": false,
+      "seat": null,
+      "token": "RSVP-1019"
+    },
+    {
+      "id": 20,
+      "name": "Michael Rodriguez",
+      "email": "michael.rodriguez@example.com",
+      "group": "Work",
+      "status": "Attending",
+      "mealChoice": "Fish",
+      "plusOne": false,
+      "seat": null,
+      "token": "RSVP-1020"
+    },
+    {
+      "id": 21,
+      "name": "Ella Lewis",
+      "email": "ella.lewis@example.com",
+      "group": "Friends",
+      "status": "Pending",
+      "mealChoice": "Chicken",
+      "plusOne": true,
+      "seat": null,
+      "token": "RSVP-1021"
+    },
+    {
+      "id": 22,
+      "name": "Daniel Lee",
+      "email": "daniel.lee@example.com",
+      "group": "Friends",
+      "status": "Pending",
+      "mealChoice": "Fish",
+      "plusOne": false,
+      "seat": null,
+      "token": "RSVP-1022"
+    },
+    {
+      "id": 23,
+      "name": "Scarlett Walker",
+      "email": "scarlett.walker@example.com",
+      "group": "Family",
+      "status": "Pending",
+      "mealChoice": "Vegetarian",
+      "plusOne": true,
+      "seat": null,
+      "token": "RSVP-1023"
+    },
+    {
+      "id": 24,
+      "name": "Henry Hall",
+      "email": "henry.hall@example.com",
+      "group": "Family",
+      "status": "Pending",
+      "mealChoice": "Fish",
+      "plusOne": true,
+      "seat": null,
+      "token": "RSVP-1024"
+    },
+    {
+      "id": 25,
+      "name": "Grace Allen",
+      "email": "grace.allen@example.com",
+      "group": "Friends",
+      "status": "Declined",
+      "mealChoice": "Vegetarian",
+      "plusOne": false,
+      "seat": null,
+      "token": "RSVP-1025"
+    },
+    {
+      "id": 26,
+      "name": "Jackson Young",
+      "email": "jackson.young@example.com",
+      "group": "Friends",
+      "status": "Declined",
+      "mealChoice": "Chicken",
+      "plusOne": false,
+      "seat": null,
+      "token": "RSVP-1026"
+    },
+    {
+      "id": 27,
+      "name": "Chloe King",
+      "email": "chloe.king@example.com",
+      "group": "Family",
+      "status": "Declined",
+      "mealChoice": "Fish",
+      "plusOne": true,
+      "seat": null,
+      "token": "RSVP-1027"
+    },
+    {
+      "id": 28,
+      "name": "Sebastian Wright",
+      "email": "sebastian.wright@example.com",
+      "group": "VIP",
+      "status": "Pending",
+      "mealChoice": "Vegetarian",
+      "plusOne": true,
+      "seat": null,
+      "token": "RSVP-1028"
+    },
+    {
+      "id": 29,
+      "name": "Victoria Scott",
+      "email": "victoria.scott@example.com",
+      "group": "Family",
+      "status": "Declined",
+      "mealChoice": "Vegetarian",
+      "plusOne": true,
+      "seat": null,
+      "token": "RSVP-1029"
+    },
+    {
+      "id": 30,
+      "name": "Aiden Green",
+      "email": "aiden.green@example.com",
+      "group": "Friends",
+      "status": "Declined",
+      "mealChoice": "Fish",
+      "plusOne": true,
+      "seat": null,
+      "token": "RSVP-1030"
+    },
+    {
+      "id": 31,
+      "name": "Lily Baker",
+      "email": "lily.baker@example.com",
+      "group": "Family",
+      "status": "Attending",
+      "mealChoice": "Fish",
+      "plusOne": true,
+      "seat": null,
+      "token": "RSVP-1031"
+    },
+    {
+      "id": 32,
+      "name": "Matthew Adams",
+      "email": "matthew.adams@example.com",
+      "group": "Family",
+      "status": "Attending",
+      "mealChoice": "Chicken",
+      "plusOne": false,
+      "seat": null,
+      "token": "RSVP-1032"
+    },
+    {
+      "id": 33,
+      "name": "Hannah Nelson",
+      "email": "hannah.nelson@example.com",
+      "group": "Friends",
+      "status": "Declined",
+      "mealChoice": "Vegetarian",
+      "plusOne": false,
+      "seat": null,
+      "token": "RSVP-1033"
+    },
+    {
+      "id": 34,
+      "name": "Samuel Carter",
+      "email": "samuel.carter@example.com",
+      "group": "VIP",
+      "status": "Declined",
+      "mealChoice": "Fish",
+      "plusOne": true,
+      "seat": null,
+      "token": "RSVP-1034"
+    },
+    {
+      "id": 35,
+      "name": "Aria Mitchell",
+      "email": "aria.mitchell@example.com",
+      "group": "Friends",
+      "status": "Declined",
+      "mealChoice": "Fish",
+      "plusOne": true,
+      "seat": null,
+      "token": "RSVP-1035"
+    },
+    {
+      "id": 36,
+      "name": "David Perez",
+      "email": "david.perez@example.com",
+      "group": "Work",
+      "status": "Attending",
+      "mealChoice": "Vegetarian",
+      "plusOne": true,
+      "seat": null,
+      "token": "RSVP-1036"
+    },
+    {
+      "id": 37,
+      "name": "Nora Roberts",
+      "email": "nora.roberts@example.com",
+      "group": "Friends",
+      "status": "Declined",
+      "mealChoice": "Vegetarian",
+      "plusOne": false,
+      "seat": null,
+      "token": "RSVP-1037"
+    },
+    {
+      "id": 38,
+      "name": "Joseph Turner",
+      "email": "joseph.turner@example.com",
+      "group": "Friends",
+      "status": "Pending",
+      "mealChoice": "Fish",
+      "plusOne": true,
+      "seat": null,
+      "token": "RSVP-1038"
+    },
+    {
+      "id": 39,
+      "name": "Zoey Phillips",
+      "email": "zoey.phillips@example.com",
+      "group": "Family",
+      "status": "Declined",
+      "mealChoice": "Chicken",
+      "plusOne": true,
+      "seat": null,
+      "token": "RSVP-1039"
+    },
+    {
+      "id": 40,
+      "name": "John Campbell",
+      "email": "john.campbell@example.com",
+      "group": "Family",
+      "status": "Attending",
+      "mealChoice": "Fish",
+      "plusOne": true,
+      "seat": null,
+      "token": "RSVP-1040"
+    }
+  ],
+  "vendors": [
+    {
+      "id": 1,
+      "name": "Bloom & Vine Florals",
+      "type": "Florist",
+      "contact": "hello@bloomvine.com",
+      "phone": "+1 555-201-9101",
+      "photo": "/assets/vendor-1.svg",
+      "notes": "Need final centerpiece count by June 10",
+      "availability": "Available"
+    },
+    {
+      "id": 2,
+      "name": "Golden Spoon Catering",
+      "type": "Catering",
+      "contact": "events@goldenspoon.com",
+      "phone": "+1 555-201-9102",
+      "photo": "/assets/vendor-2.svg",
+      "notes": "Tasting complete",
+      "availability": "Booked"
+    },
+    {
+      "id": 3,
+      "name": "BrightFrame Studio",
+      "type": "Photography",
+      "contact": "bookings@brightframe.com",
+      "phone": "+1 555-201-9103",
+      "photo": "/assets/vendor-3.svg",
+      "notes": "Shot list draft pending",
+      "availability": "Available"
+    },
+    {
+      "id": 4,
+      "name": "Moonlight DJs",
+      "type": "Music",
+      "contact": "team@moonlightdjs.com",
+      "phone": "+1 555-201-9104",
+      "photo": "/assets/vendor-4.svg",
+      "notes": "First dance track confirmed",
+      "availability": "Available"
+    },
+    {
+      "id": 5,
+      "name": "Seaside Manor",
+      "type": "Venue",
+      "contact": "sales@seasidemanor.com",
+      "phone": "+1 555-201-9105",
+      "photo": "/assets/vendor-5.svg",
+      "notes": "Rain backup space reserved",
+      "availability": "Booked"
+    },
+    {
+      "id": 6,
+      "name": "Pearl Day Coordination",
+      "type": "Planner",
+      "contact": "ops@pearlday.com",
+      "phone": "+1 555-201-9106",
+      "photo": "/assets/vendor-6.svg",
+      "notes": "Timeline v2 shared",
+      "availability": "Available"
+    }
+  ],
+  "registry": [
+    {
+      "id": 1,
+      "name": "Artisan Blender",
+      "price": 180,
+      "photo": "/assets/registry-blender.svg",
+      "link": "https://example.com/blender",
+      "purchased": false,
+      "groupGift": false
+    },
+    {
+      "id": 2,
+      "name": "Stoneware Dinner Set",
+      "price": 260,
+      "photo": "/assets/registry-dinnerware.svg",
+      "link": "https://example.com/dinnerware",
+      "purchased": false,
+      "groupGift": true
+    },
+    {
+      "id": 3,
+      "name": "Carry-On Luggage Set",
+      "price": 320,
+      "photo": "/assets/registry-luggage.svg",
+      "link": "https://example.com/luggage",
+      "purchased": true,
+      "groupGift": true
+    }
+  ],
+  "budget": {
+    "total": 45000,
+    "spent": 28900
+  },
+  "tasks": [
+    {
+      "id": 1,
+      "title": "Finalize seating chart",
+      "done": false
+    },
+    {
+      "id": 2,
+      "title": "Confirm welcome bags",
+      "done": true
+    },
+    {
+      "id": 3,
+      "title": "Send final timeline to vendors",
+      "done": false
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+:root {
+  --bs-primary: #6f4e37;
+  --bs-body-font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3, .navbar-brand {
+  font-family: 'Playfair Display', serif;
+}
+
+.app.theme-dark {
+  background: #141414;
+  color: #f1f1f1;
+  min-height: 100vh;
+}
+
+.app.theme-dark .card,
+.app.theme-dark .modal-content {
+  background: #232323;
+  color: #f1f1f1;
+}
+
+.hero {
+  background-size: cover;
+  background-position: center;
+  min-height: 340px;
+}
+
+.fade-in {
+  animation: fadeIn 0.6s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.btn { transition: transform 0.2s ease; }
+.btn:hover { transform: translateY(-1px); }
+
+.seat-dropzone {
+  border: 2px dashed #b8a18f;
+  border-radius: 8px;
+  min-height: 140px;
+  background: #fff9f4;
+}
